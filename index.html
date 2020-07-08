@@ -31,8 +31,9 @@
 
         .hr-active {
             background-color: red !important;
-            
+
         }
+
         .hr-disabled {
             margin-left: 10px;
             height: 10px;
@@ -41,7 +42,7 @@
             border-radius: 3px
         }
 
-       
+
 
         .divbig {
             background-color: grey;
@@ -53,7 +54,7 @@
             margin: auto;
         }
 
-       
+
 
         .largemb {
             margin-bottom: 100px;
@@ -85,7 +86,7 @@
 
         }
 
-        
+
 
         .continue {
             background-color: gray;
@@ -131,7 +132,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pl-md-4 font-weight-bold" href="#">
-                            <img  style="width: 100%; heigth: 100%;"  src="./image/UnleDoePix.png" alt="#" class=" px-4 mx-3 my-2 my-sm-0" >
+                            <img style="width: 100%; heigth: 100%;" src="./image/UnleDoePix.png" alt="#"
+                                class=" px-4 mx-3 my-2 my-sm-0">
 
                         </a>
                     </li>
@@ -155,7 +157,7 @@
             <div class=" col-3 hr-disabled hr-active"></div>
             <div class=" col-3 hr-disabled "></div>
             <div class="col-3 hr-disabled "></div>
-                        
+
         </div>
 
 
@@ -163,32 +165,42 @@
     </div>
     <div class="row">
 
-
-        <div class="divbig text-center bg-light p-5 ">
-            <h4 class="font-weight-bold">Add a description</h4>
-            <p class="largemb">Why should people invest in this cause?</p>
-
-
-            <div class="divmid text-left p-2 m-0">
-                <input type="text" placeholder="Writing a good description usually increases your chances of getting funds by 63%"> 
-            
-                </p>
+        <div class="col">
+            <div class="divbig text-center bg-light p-5 ">
+                <h4 class="font-weight-bold">Add a description</h4>
+                <p class="largemb">Why should people invest in this cause?</p>
             </div>
         </div>
+
+        <div class="col">
+            <div class="divmid text-left p-2 m-0">
+                <input style="width: 100%; border: 1px solid grey;" type="text"
+                    placeholder="Writing a good description usually increases your chances of getting funds by 63%">
+
+                </p>
+            </div>
+
+        </div>
+    </div>
     </div>
 
 
     <div class=" row my-2 d-flex justify-content-around buttons">
-        <button class="btn  px-4 mx-3 my-2 my-sm-0" type="submit">Back</button>
-        <button class="btn continue btn-light text-white px-4 mx-3 my-2 my-sm-0" type="submit">continue ></button>
-    </div>
+        <div class="col-5">
+
+
+            <button class="btn  px-4 mx-3 my-2 my-sm-0" type="submit">Back</button>
+            <button class="btn continue btn-light text-white px-4 mx-3 my-2 my-sm-0" type="submit">continue ></button>
+        </div>
     </div>
 
+   
 
     <footer>
-        <div class="footer">
-            <div class="row justify-content-around pt-3 pb-3 ">
-                <div class="col-md-2 text-left">
+
+        <div>
+            <div class="row">
+                <div class="d-none d-sm-block col-sm-4">
                     <div class="logo">
                         <a class="navbar-brand" href="#">
                             <img style="width: 100%; height: 100%;" src="./image/footer-logo.png" alt="#">
@@ -200,51 +212,22 @@
                             09023144819
                         </p>
 
-                        <div class="row social-m-handles d-flex justify-content-around mr-5">
-
-                            <i class="fa fa-facebook fa-1x text-white"></i>
-                            <i class="fa fa-instagram fa-1x text-white"></i>
-                            <i class="fa fa-twitter fa-1x text-white"></i>
-
-                        </div>
-
                     </div>
                 </div>
-
-                <div class="col-md-3 text-white my-5" style="font-size: 12px;">
+                <div class="col-sm-4 col-12">
                     <p> Why choose FundMyLaptop </p>
                     <p>How P2P Lending works</p>
                 </div>
-
-
-                <div class="col-md-3 text-white my-5" style="font-size: 12px;">
+                <div class="col-sm-4 col-12">
                     <p> About FundMyLaptop</p>
                     <p>Contact Us</p>
                 </div>
             </div>
-            <hr class="break">
-
-            <div class="row d-flex justify-content-around">
-                
-                <div class=" col-md-3 copyright style=" font-size: 12px;>
-                    <p class="text-white" style="font-size: 12px; margin-left: -120px;">2020 @ copyright All rights
-                        reserved</p>
-                </div>
-                <div class="row text-white d-flex justify-content-between" style="font-size: 12px;">
-                    <div class=" col mx-2">FAQ </div>
-                    <div class="mx-2 col ">Privacy Policy </div>
-                    <div class="mx-2 col ">Terms & Conditions </div>
-
-                </div>
-
-            </div>
-
-
-
-
+            <div class="row"></div>
+            <div class="row"></div>
         </div>
-
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
