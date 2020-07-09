@@ -59,7 +59,7 @@
         }
 
         .continue {
-            background-color: #BABABA;
+            background-color: gray;
         }
 
         .buttons {
@@ -74,85 +74,6 @@
             width: 95%;
             border-top: 1px solid white;
         }
-
-        textarea {
-    resize: none;
-}
-
-.pcolor {
-            color: #707070;
-        }
-
-        .f-12 {
-            font-size: 12px;
-        }
-
-        .vidprogress {
-            width: 100%;
-            margin-right: -25px;
-        }
-
-        progress {
-            height: 6px;
-            border: 1px solid #FB3F5C;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-
-        progress[value] {
-            -webkit-appearance: none;
-            appearance: none;
-        }
-        
-        .vidprogress {
-            width: 100%;
-            margin-right: -25px;
-        }
-
-
-        progress {
-            height: 6px;
-            border: 1px solid #FB3F5C;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-
-        progress[value] {
-            -webkit-appearance: none;
-            appearance: none;
-        }
-
-        progress[value]::-webkit-progress-bar {
-            background-color: white;
-            border-radius: 10px;
-        }
-
-        progress[value]::-webkit-progress-value {
-            background-color: #FB3F5C;
-            border-radius: 10px;
-        }
-        /* Cross browser compatability  */
-
-        progress::-moz-progress-bar {
-            background-color: #FB3F5C;
-            border-radius: 10px;
-        }
-
-        @media only screen and (min-width: 775px) {
-        .f-12 {
-            font-size: 16px;
-        }
-        .pcolor {
-            color: #707070;
-        }
-        .rowprogress {
-            width: 50%;
-        }
-        progress {
-            height: 8px;
-        }
-}
-
     </style>
 </head>
 
@@ -190,61 +111,7 @@
         </nav>
     </header>
 
-
-
-    <div class="container">
-    <div class="row ">
-        <!--Heading-->
-        <div class="col-12">
-          <ol class="f-12 upldBreadcrumb breadcrumb" style="background:none;">
-          <li class="breadcrumb-item"><a class="pcolor" href="#">Dashboard</a></li>
-          <li class="breadcrumb-item"><a class="pcolor" href="#">Create Request</a></li>
-          <li class="breadcrumb-item active text-dark"><b>Add Description</b></li>
-          </ol>
-        </div>
-        <div class="col-sm-6">
-          <h2>Add a description</h2>
-          <p class="pcolor f-12">Why should people invest in this cause</p>
-          <!--Inner progress bar-->
-        </div>
-      </div>
-
-
-      <div class="row rowprogress">
-        <div class="col-4 col-md-4   vidprogress">
-          <progress  style="border: 2px solid #707070;"  class="vidprogress pcolor" value="0" max="20"></progress>
-        </div>
-        <div class="col-4 col-md-4 vidprogress">
-          <progress class="vidprogress" value="20" max="20"></progress>
-        </div>
-        <div class="col-4 col-md-4 vidprogress">
-          <progress style="border: 2px solid #707070; color: #707070 ;" class="vidprogress pcolor" value="0" max="20"></progress>
-        </div>
-      </div>
-
-
-      <section class="container px-4 px-sm-auto ">
-        <div class="row py-5 mb-5 rounded" style="background-color:#EFEFEF">
-            <div class="col-sm-3"></div>
-            <div class=" col-12 col-sm-6">
-                <h4 class="font-weight-bold text-center">Add a description</h4>
-                <p class="text-center mb-5">Why should people invest in this cause</p>
-                <textarea class="w-100" name="" id="" cols="30" rows="10"></textarea>
-                <div class="d-flex justify-content-between mt-4">
-                    <button class="btn  px-4 my-2 my-sm-0" type="submit">Back</button>
-                    <button class="continue btn btn-light text-white px-4 my-2 my-sm-0" type="submit">continue
-                        ></button>
-                </div>
-
-            </div>
-            <div class="col-sm-3"></div>
-        </div>
-    </section>
-
-
-    
-
-    <!-- <section class="container py-5">
+    <section class="container py-5">
         <div class="row d-none d-sm-block">
             <div class="col-sm-4">
                 <p class=""> Dashboard > Create Request <span class="font-weight-bold">Add Description</span></p>
@@ -258,10 +125,26 @@
             <div class="col-3 col-sm-2 hr-disabled "></div>
             <div class="col-sm-6"></div>
         </div>
-    </section> -->
+    </section>
+    <section class="container px-4 px-sm-auto ">
+        <div class="row py-5 mb-5 rounded" style="background-color:#EFEFEF">
+            <div class="col-sm-3"></div>
+            <div class=" col-12 col-sm-6">
+                <h4 class="font-weight-bold text-center">Add a description</h4>
+                <p class="text-center mb-5">Why should people invest in this cause?</p>
+                <!-- <input class="w-100" type="range" name="" id="" style="background-color:red"> -->
+                <textarea class="w-100" name="" id="" cols="30" rows="10"></textarea>
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btn  px-4 my-2 my-sm-0" type="submit">Back</button>
+                    <button class="continue btn btn-light text-white px-4 my-2 my-sm-0" type="submit">continue
+                        ></button>
+                </div>
 
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </section>
 
-</div>
 
     <footer class="container-fluid" style="background-color: #041721;">
         <div class="container pt-5" style="color: white;">
