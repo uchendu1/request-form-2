@@ -16,37 +16,38 @@
             font-family: "DM Sans", Sans-Serif;
         }
 
-        .hr-tabs {
+        /* hr {
             width: 80px;
             height: 13px;
             margin-bottom: 50px;
             border-radius: 3px;
-        }
+        } */
 
         i {
             color: white;
         }
 
-        .hr-active {
+        /* .hr-active {
             background-color: red !important;
-        }
+        } */
 
-        .hr-disabled {
+        /* .hr-disabled {
             margin-left: 10px;
             height: 10px;
             background-color: grey;
             width: 40px;
             border-radius: 3px;
-        }
+        } */
 
         .divbig {
             background-color: grey;
-            width: 800px;
+            width: 900px;
+            max-width: 80vw;
             height: 400px;
-            position: relative;
+            /* position: relative; */
             border-radius: 4px;
             align-self: center;
-            margin: 0 auto;
+            margin: 0  auto;
         }
 
         .largemb {
@@ -58,13 +59,31 @@
             background-color: black;
         }
 
+        .divmid {
+            /* margin: auto; */
+
+            font-size: 12px;
+            color: grey;
+            border-radius: 3px;
+            /* margin-top: 50px; */
+            position: absolute;
+            top: 30%;
+            bottom: 40%;
+            left: -50%;
+            right: 40%;
+            background-color: white;
+            width: 350px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
         .continue {
-            background-color: #BABABA;
+            background-color: gray;
         }
 
         .buttons {
             position: relative;
-            bottom: 150px;
+            bottom: 84px;
         }
 
         .break {
@@ -75,11 +94,9 @@
             border-top: 1px solid white;
         }
 
-        textarea {
-    resize: none;
-}
+        
 
-.pcolor {
+        .pcolor {
             color: #707070;
         }
 
@@ -152,7 +169,6 @@
             height: 8px;
         }
 }
-
     </style>
 </head>
 
@@ -190,78 +206,97 @@
         </nav>
     </header>
 
-
-
     <div class="container">
-    <div class="row ">
-        <!--Heading-->
-        <div class="col-12">
-          <ol class="f-12 upldBreadcrumb breadcrumb" style="background:none;">
-          <li class="breadcrumb-item"><a class="pcolor" href="#">Dashboard</a></li>
-          <li class="breadcrumb-item"><a class="pcolor" href="#">Create Request</a></li>
-          <li class="breadcrumb-item active text-dark"><b>Add Description</b></li>
-          </ol>
-        </div>
-        <div class="col-sm-6">
-          <h2>Add a description</h2>
-          <p class="pcolor f-12">Why should people invest in this cause</p>
-          <!--Inner progress bar-->
-        </div>
-      </div>
 
-
-      <div class="row rowprogress">
-        <div class="col-4 col-md-4   vidprogress">
-          <progress  style="border: 2px solid #707070;"  class="vidprogress pcolor" value="0" max="20"></progress>
-        </div>
-        <div class="col-4 col-md-4 vidprogress">
-          <progress class="vidprogress" value="20" max="20"></progress>
-        </div>
-        <div class="col-4 col-md-4 vidprogress">
-          <progress style="border: 2px solid #707070; color: #707070 ;" class="vidprogress pcolor" value="0" max="20"></progress>
-        </div>
-      </div>
-
-
-      <section class="container px-4 px-sm-auto ">
-        <div class="row py-5 mb-5 rounded" style="background-color:#EFEFEF">
-            <div class="col-sm-3"></div>
-            <div class=" col-12 col-sm-6">
-                <h4 class="font-weight-bold text-center">Add a description</h4>
-                <p class="text-center mb-5">Why should people invest in this cause</p>
-                <textarea class="w-100" name="" id="" cols="30" rows="10"></textarea>
-                <div class="d-flex justify-content-between mt-4">
-                    <button class="btn  px-4 my-2 my-sm-0" type="submit">Back</button>
-                    <button class="continue btn btn-light text-white px-4 my-2 my-sm-0" type="submit">continue
-                        ></button>
-                </div>
-
+        <div class="row ">
+            <!--Heading-->
+            <div class="col-12">
+              <ol class="f-12 upldBreadcrumb breadcrumb" style="background:none;">
+              <li class="breadcrumb-item"><a class="pcolor" href="#">Dashboard</a></li>
+              <li class="breadcrumb-item"><a class="pcolor" href="#">Create Request</a></li>
+              <li class="breadcrumb-item active text-dark"><b>Upload Video</b></li>
+              </ol>
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <h2>Upload your Video</h2>
+              <p class="pcolor f-12">Upload your Video in response to you campaign as this matters alot</p>
+              <!--Inner progress bar-->
+            </div>
+          </div>
+
+          <div class="row rowprogress">
+            <div class="col-4 col-md-4 vidprogress">
+              <progress class="vidprogress" value="0" max="20"></progress>
+            </div>
+            <div class="col-4 col-md-4 vidprogress">
+              <progress class="vidprogress" value="20" max="20"></progress>
+            </div>
+            <div class="col-4 col-md-4 vidprogress">
+              <progress class="vidprogress" value="0" max="20"></progress>
+            </div>
+          </div>
+
+    <div class="row d-flex justify-content-center card-body" >
+        <div class="col">
+            <div class="divbig text-center bg-light p-5 ">
+                <h4 class="font-weight-bold">Add a description</h4>
+                <!-- <p class="largemb">Why should people invest in this cause?</p> -->
+                <div class="col75">
+                <textarea placeholder= "Why should people invest in this cause?"style='height:200px'></textarea>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <!-- <div class="col">
+                <div class="divmid text-left p-2 m-0">
+                    <input style="width: 100%; border: 1px solid grey;" type="text"
+                        placeholder="Writing a good description usually increases your chances of getting funds by 63%">
+    
+                    </p>
+                </div>
+    
+            </div> -->
 
 
+    </div>
+
+
+
+    <!-- <div class="row d-flex justify-content-center">
+
+        <div class="col">
+
+            <div class="divbig text-center bg-light p-5 ">
+                <h4 class="font-weight-bold">Add a description</h4>
+                <p class="largemb">Why should people invest in this cause?</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="divmid text-left p-2 m-0">
+                <input style="width: 100%; border: 1px solid grey;" type="text"
+                    placeholder="Writing a good description usually increases your chances of getting funds by 63%">
+
+                </p>
+            </div>
+
+        </div>
+    </div> -->
     
 
-    <!-- <section class="container py-5">
-        <div class="row d-none d-sm-block">
-            <div class="col-sm-4">
-                <p class=""> Dashboard > Create Request <span class="font-weight-bold">Add Description</span></p>
-            </div>
-        </div>
-        <h3 class="mt-4 font-weight-bold">Add a description</h3>
-        <p class="Upload">This description would be visible to potential funders </p>
-        <div class="row">
-            <div class="col-3 col-sm-2 hr-disabled "></div>
-            <div class="col-3 col-sm-2 hr-disabled hr-active"></div>
-            <div class="col-3 col-sm-2 hr-disabled "></div>
-            <div class="col-sm-6"></div>
-        </div>
-    </section> -->
+
+    <div class=" row my-2 d-flex justify-content-around buttons">
+        <div class="col-5">
 
 
-</div>
+            <button class="btn  px-4 mx-3 my-2 my-sm-0" type="submit">Back</button>
+            <button class="btn continue btn-light text-white px-4 mx-3 my-2 my-sm-0" type="submit">continue ></button>
+        </div>
+    </div>
+    </div>
+
+
+    <section></section>
 
     <footer class="container-fluid" style="background-color: #041721;">
         <div class="container pt-5" style="color: white;">
@@ -270,6 +305,13 @@
                     <a class="navbar-brand" href="#">
                         <img style="width: 100%; height: 100%;" src="./image/footer-logo.png" alt="#" />
                     </a>
+                    <!-- <p class="text-white" style="font-size: 12px; line-height: 39px;">
+                              23, intel chip silicon valley
+                              <br />
+                              info@fundmylaptop.com <br />
+      
+                              09023144819
+                          </p> -->
                     <p>23, intel chip silicon valley</p>
                     <p>info@fundmylaptop.com</p>
                     <p>09023144819</p>
